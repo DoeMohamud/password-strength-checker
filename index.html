@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength Checker</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Password Strength Checker</h2>
+        <div class="form-group">
+            <label for="passwordInput">Enter your password:</label>
+            <input type="text" class="form-control" id="passwordInput" placeholder="Password">
+            <div id="strengthOutput" class="strength-meter mt-3"></div>
+            <ul id="criteriaChecklist" class="list-group mt-3">
+                <li class="list-group-item" id="lengthCheck">At least 8 characters</li>
+                <li class="list-group-item" id="capitalCheck">Contains a capital letter</li>
+                <li class="list-group-item" id="numberCheck">Contains a number</li>
+                <li class="list-group-item" id="specialCheck">Contains a special character</li>
+            </ul>
+            <div id="successMessage" style="display: none; color: black;">You have successfully met the criteria for a strong password!</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body { 
+    margin: 0; 
+    font-family: monospace; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: linear-gradient(to top right, 
+            #46b3b3, #cfd2d8); 
+    color: #0e0f0f; 
+    font-size: 20px; 
+} 
+.container {
+    max-width: 600px;
+}
+.strength-meter {
+    display: none;
+    margin-top: 10px;
+}
+/* Styling for the checklist items */
+.list-group-item {
+    background-color: #f8f9fa; /* Light background to blend with the page */
+    color: #dc3545; /* Start with red color indicating unmet criteria */
+}
+.list-group-item.success {
+    color: #28a745; /* Green color indicating met criteria */
+}
+
+/* Responsive font sizes and padding */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+    .form-control {
+        font-size: 1rem;
+    }
+    body {
+        padding: 10px;
+    }
+}
